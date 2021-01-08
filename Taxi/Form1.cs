@@ -94,9 +94,28 @@ namespace Taxi
                 NormalPriceRow.Cells[1].Value = normalMinutes * 0.45;
                 this.dataGridView1.Rows.Add(NormalPriceRow);
 
+                double totalPrice = (double)KmTravelled + discountMinutes * 0.25 + normalMinutes * 0.45;
+                bool startedOnWeekend = false;
+                Console.WriteLine(startDateTime.Hour);
+                if (
+                    startDateTime.DayOfWeek == DayOfWeek.Friday && startDateTime.Hour >= 22 ||
+                    startDateTime.DayOfWeek == DayOfWeek.Saturday ||
+                    startDateTime.DayOfWeek == DayOfWeek.Sunday ||
+                    startDateTime.DayOfWeek == DayOfWeek.Monday && startDateTime.Hour <= 7
+                )
+                {
+                    totalPrice = totalPrice * 1.15;
+                    startedOnWeekend = true;
+                }
+
+                DataGridViewRow WeekendRow = (DataGridViewRow)this.dataGridView1.Rows[0].Clone();
+                WeekendRow.Cells[0].Value = "Started on weekend?";
+                WeekendRow.Cells[1].Value = startedOnWeekend;
+                this.dataGridView1.Rows.Add(WeekendRow);
+
                 DataGridViewRow TotalPriceRow = (DataGridViewRow)this.dataGridView1.Rows[0].Clone();
                 TotalPriceRow.Cells[0].Value = "Total time price (EUR)";
-                TotalPriceRow.Cells[1].Value = (double) KmTravelled + discountMinutes * 0.25 + normalMinutes * 0.45;
+                TotalPriceRow.Cells[1].Value = totalPrice;
                 this.dataGridView1.Rows.Add(TotalPriceRow);
             }
             
