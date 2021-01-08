@@ -1,0 +1,10 @@
+C:\Users\bnkho\source\repos\Taxi\Taxi\bin\Debug\Taxi.exe.config
+C:\Users\bnkho\source\repos\Taxi\Taxi\bin\Debug\Taxi.exe
+C:\Users\bnkho\source\repos\Taxi\Taxi\bin\Debug\Taxi.pdb
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.csprojAssemblyReference.cache
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.Form1.resources
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.Properties.Resources.resources
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.csproj.GenerateResource.cache
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.csproj.CoreCompileInputs.cache
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.exe
+C:\Users\bnkho\source\repos\Taxi\Taxi\obj\Debug\Taxi.pdb
